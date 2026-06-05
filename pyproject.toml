@@ -3,14 +3,14 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "douyin-downloader"
+name = "DouyinSolver"
 version = "1.0.0"
 description = "抖音视频无水印下载库 - 无需 Cookie，支持视频和图集"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [
-    {name = "OpenCode", email = "example@example.com"}
+    {name = "ksduqiao", email = "ksduqiao@gmail.com"}
 ]
 keywords = ["douyin", "tiktok", "download", "video", "无水印", "抖音"]
 classifiers = [
@@ -43,9 +43,9 @@ dev = [
 douyin-dl = "douyin_downloader.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/example/douyin-downloader"
-Repository = "https://github.com/example/douyin-downloader"
-Issues = "https://github.com/example/douyin-downloader/issues"
+Homepage = "https://github.com/moehans-official/DouyinSolver"
+Repository = "https://github.com/moehans-official/DouyinSolver"
+Issues = "https://github.com/moehans-official/DouyinSolver/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
