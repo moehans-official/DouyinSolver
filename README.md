@@ -2,38 +2,21 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue?style=flat-square&logo=python" alt="Python 3.8+">
+  <img src="https://img.shields.io/badge/PyPI-v1.0.0-brightgreen?style=flat-square&logo=pypi" alt="PyPI">
   <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT License">
-  <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey?style=flat-square" alt="Platform">
 </p>
 
 <p align="center">
   <b>抖音视频无水印下载工具</b><br>
-  无需 Cookie · 无需 X-Bogus · 支持视频和图集
+  无需登录 · 无需 Cookie · 支持视频和图集
 </p>
-
----
-
-## 特性
-
-- **零配置使用** - 无需登录，无需 Cookie，开箱即用
-- **无水印下载** - 自动转换带水印地址为无水印地址
-- **视频 + 图集** - 支持视频和图集两种模式
-- **移动端策略** - 使用 iPhone User-Agent 绕过反爬虫
-- **Python 库** - 可作为库集成到你的项目中
-- **命令行工具** - 提供 `douyin-dl` 命令行工具
 
 ---
 
 ## 安装
 
 ```bash
-# 从 PyPI 安装（发布后）
-pip install douyin-downloader
-
-# 从源码安装
-git clone https://github.com/moehans-official/DouyinSolver.git
-cd DouyinSolver
-pip install -e .
+pip install DouyinSolver
 ```
 
 ---
@@ -49,7 +32,7 @@ douyin-dl "https://www.douyin.com/video/xxxxxxxxxx"
 # JSON 输出
 douyin-dl "xxxxxxxxxx" --json
 
-# 下载视频
+# 下载视频到指定目录
 douyin-dl "xxxxxxxxxx" --download --output ./downloads
 ```
 
@@ -64,7 +47,6 @@ dl = DouyinDownloader()
 # 解析视频
 info = dl.parse("https://v.douyin.com/xxxxx")
 
-# 查看信息
 print(f"标题: {info.title}")
 print(f"作者: {info.author}")
 print(f"无水印地址: {info.play_url}")
@@ -72,6 +54,14 @@ print(f"无水印地址: {info.play_url}")
 # 下载视频
 dl.download_video(info, "./downloads")
 ```
+
+---
+
+## 支持的链接格式
+
+- 短链接: `https://v.douyin.com/xxxxx`
+- 长链接: `https://www.douyin.com/video/xxxxxxxxxx`
+- 纯视频 ID: `xxxxxxxxxx`
 
 ---
 
@@ -169,3 +159,8 @@ for url in urls:
 ## License
 
 MIT License - 详见 [LICENSE](LICENSE)
+
+---
+
+**GitHub**: https://github.com/moehans-official/DouyinSolver  
+**PyPI**: https://pypi.org/project/DouyinSolver/
