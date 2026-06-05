@@ -160,16 +160,6 @@ for url in urls:
 
 ---
 
-## 技术原理
-
-1. **移动端 User-Agent**: 使用 iPhone Safari 的 UA，避免桌面端的反爬虫机制
-2. **SSR 数据提取**: 从分享页的 `window._ROUTER_DATA` 解析视频元数据
-3. **无水印转换**: 将 `playwm` 替换为 `play` 获取无水印地址
-
-详细实现过程请参阅 [IMPLEMENTATION.md](IMPLEMENTATION.md)
-
----
-
 ## 免责声明
 
 本工具仅供学习研究使用，请遵守相关法律法规和平台使用条款。使用者应确保已获得必要授权，产生的任何后果均由使用者自行承担。
